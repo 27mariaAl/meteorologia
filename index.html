@@ -13,34 +13,44 @@
     <title>Meteo app</title>
   </head>
   <body>
-    <div class="weather">
+    <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>
-            Cape Town,
-            <span>South Africa </span>
-          </h1>
-          <p>
-            Friday 22:46, partly cloudy
-            <br />
-            Humidity: 95%, Wind: 8 km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">
+              Cape Town,
+              <span class="weather-app-country">South Africa </span>
+            </h1>
+            <p class="weather-app-details">
+              Friday 22:46, <strong>partly cloudy</strong>
+              <br />
+              Humidity: <strong>90%</strong>, Wind: <strong>8 km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">☁️</div>
+            <div class="weather-app-temperature">14</div>
+            <div class="weather-app-temperature-unit">°C|°F</div>
+          </div>
         </div>
-        <div>☁️ 14°C</div>
       </main>
       <footer>
         This project was coded by
-        <a href="https://github.com/27mariaAl" target="_blank">Maria Alfredo</a
-        >, open-sourced on<a
-          href="https://github.com/27mariaAl/meteorologia"
-          target="_blank"
-          >GitHub
+        <a href="https://github.com/27mariaAl" target="_blank">Maria Alfredo</a>
+        is
+        <a href="https://github.com/27mariaAl/meteorologia" target="_blank"
+          >open-sourced on GitHub
         </a>
         and hosted on
         <a
